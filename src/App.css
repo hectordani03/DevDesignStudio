@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+summary {
+  cursor: pointer;
+  user-select: none; /* Evita la selección de texto cuando se hace clic */
+  list-style: none; /* Oculta la flecha predeterminada */
+}
+summary::before {
+  content: '+'; /* Utiliza el carácter de flecha hacia la derecha o tu propio indicador */
+  margin-right: 5px; /* Ajusta el espacio entre la flecha y el texto */
+  display: inline-block;
+  transition: transform 0.2s ease-out, opacity 0.2s ease-out; /* Agrega una transición para suavizar el cambio */
+  float: right;
+}
+
+details[open] summary::before {
+  content: '-'; /* Utiliza el carácter de flecha hacia la derecha o tu propio indicador */
+  opacity: 1; /* Hace que el contenido actual desaparezca gradualmente */
+  transform: translateY(5px); /* Mueve ligeramente hacia abajo durante la transición */
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #999; /* Cambia el color del marcador de posición */
+  font-weight: normal; /* Cambia el peso de la fuente del marcador de posición */
+  padding: 10px;
+  outline: none;
+  border-color: #999 !important;
+}
+
+/* Opcional: Cambia el estilo del marcador de posición cuando el input está enfocado */
+input:focus::placeholder,
+textarea:focus::placeholder {
+  color: #ccc;
+  font-style: normal;
+}
+
+/* Cambia el estilo del contorno de foco del input */
+input:focus,
+textarea:focus {
+  outline: 2px solid rgb(90, 206, 156); /* Cambia el color y ancho del contorno de foco */
+}
