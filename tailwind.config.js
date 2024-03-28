@@ -3,6 +3,7 @@ export default {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
+    'node_modules/flowbite-react/lib/esm/**/*.js',
   ],
   "darkMode": "class",
   theme: {
@@ -12,6 +13,8 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    'flowbite/plugin',
+  ],
 }
 

@@ -34,7 +34,7 @@ export const FooterForm = () => {
   }
 
     return (
-        <section className='relative dark:bg-slate-800' style={{height: '120vh' }}>
+        <section id='contactanos' className='relative dark:bg-slate-800' style={{height: '120vh' }}>
       <div
       className='relative inset-0 bg-cover bg-no-repeat'
       style={{
@@ -44,8 +44,7 @@ export const FooterForm = () => {
         <section className='flex relative max-w-screen flex-col lg:flex-row justify-center items-center pt-96'>
           <div className='w-auto lg:w-1/2 flex flex-col justify-center lg:items-start items-center lg:text-start text-center lg:mb-0 mb-20 mt-0 lg:mt-0'>
             <h1 className='text-4xl sm:text-5xl font-bold ml-0 sm:ml-10 mb-12 text-white'>Pruebanos Ponte en <span className='text-emerald-700'> contacto</span></h1>
-            <p className='text-white font-semibold w-3/4 ml-0 sm:ml-10 text-xl'>Un asesor especializado contactará contigo en 24/48h, para conocer tus necesidades y poder agendar una demo.
-            Nuestras demos no son estándar.</p>
+            <p className='text-white font-semibold w-3/4 ml-0 sm:ml-10 text-xl'>Ponte en contacto y haz realidad tus ideas digitales. Estamos aquí para convertir tus visiones en experiencias en línea extraordinarias. ¡Contestamos inmediatamente!</p>
           </div>
 
           <form action="#" method="post" className='flex flex-col items-center justify-center gap-y-8 text-xl w-1/2'>

@@ -6,12 +6,12 @@ import heroImage5 from '../assets/hero-5.jpg';
 
 export const HeroScroll = () => {
   return (
-    <main className="lg:grid lg:grid-cols-2 lg:grid-rows-5 border-black dark:bg-slate-800">
+    <main id='servicios' className="lg:grid lg:grid-cols-2 lg:grid-rows-5 border-black dark:bg-slate-800">
       {/* SECCION 1 */}
         <div className="text flex flex-col items-center lg:-ml-10 lg:mt-32 text-center lg:text-start">
             <h1 className='text-3xl sm:text-4xl md:text-5xl  font-bold w-1/2 dark:text-slate-300'>Soluciones Web <span className='text-emerald-400 block'>innovadoras</span></h1>
-            <p className='mt-5 w-1/2 text-xl font-semibold dark:text-slate-300'>En <span className='text-emerald-400 font-semibold'> Dev Design Studio</span>, nos apasiona ofrecer soluciones web <span className='text-emerald-400 font-semibold'> innovadoras</span> que impulsan el <span className='text-emerald-400 font-semibold'>éxito</span> de tu negocio. Desde el diseño de sitios web impactantes hasta el desarrollo de aplicaciones personalizadas, nuestro equipo experto está aquí para satisfacer tus <span className='text-emerald-400 font-semibold'> necesidades digitales.</span></p>
-            <div className='flex gap-10 justify-start first-letter w-1/2 mt-5 mb-10 lg:mb-0'>
+            <p className='mt-5 lg:w-1/2 w-10/12 text-xl font-semibold dark:text-slate-300'>En <span className='text-emerald-400 font-semibold'> Dev Design Studio</span>, nos apasiona ofrecer soluciones web <span className='text-emerald-400 font-semibold'> innovadoras</span> que impulsan el <span className='text-emerald-400 font-semibold'>éxito</span> de tu negocio. Desde el diseño de sitios web impactantes hasta el desarrollo de aplicaciones personalizadas, nuestro equipo experto está aquí para satisfacer tus <span className='text-emerald-400 font-semibold'> necesidades digitales.</span></p>
+            <div className='flex gap-1 sm:gap-5 md:gap-10 sm:text-start text-center justify-center lg:justify-start first-letter w-1/2 lg:w-1/2 sm:w-11/12 mt-5 mb-10 lg:mb-0 flex-wrap lg:flex-nowrap'>
               <ul className='list-disc ml-5 dark:text-slate-300'>
                   <li className='font-medium'>Diseño Web Creativo</li>
                   <li className='font-medium'>Desarrollo a Medida</li>
@@ -49,9 +49,9 @@ export const HeroScroll = () => {
         {/* SECCION 2 */}
         <div className="text flex flex-col items-center lg:-ml-10 mt-20 lg:mt-32 text-center lg:text-start">
             <h1 className='text-3xl sm:text-4xl md:text-5xl  font-bold w-1/2 text-emerald-400'>UX / UI<span className='block text-black dark:text-slate-300'>Design</span></h1>
-            <p className='mt-5 w-1/2 text-xl font-semibold dark:text-slate-300'>En <span className='text-emerald-400 font-semibold'>Dev Design Studio</span>, creemos que el diseño va más allá de lo visual; es la esencia misma de la <span className='text-emerald-400 font-semibold'>experiencia del usuario (UX)</span> y la <span className='text-emerald-400 font-semibold'>interfaz de usuario (UI).</span> Nuestros servicios de <span className='text-emerald-400 font-semibold'>Diseño UX/UI</span> están diseñados para cautivar, inspirar y dejar una impresión <span className='text-emerald-400 font-semibold'>duradera</span> en cada interacción digital.</p>
-            <div className='flex gap-10 justify-start first-letter w-1/2 mt-5 mb-10 lg:mb-0'>
-              <ul className='list-disc ml-5 dark:text-slate-300'>
+            <p className='mt-5 lg:w-1/2 w-10/12 text-xl font-semibold dark:text-slate-300'>En <span className='text-emerald-400 font-semibold'>Dev Design Studio</span>, creemos que el diseño va más allá de lo visual; es la esencia misma de la <span className='text-emerald-400 font-semibold'>experiencia del usuario (UX)</span> y la <span className='text-emerald-400 font-semibold'>interfaz de usuario (UI).</span> Nuestros servicios de <span className='text-emerald-400 font-semibold'>Diseño UX/UI</span> están diseñados para cautivar, inspirar y dejar una impresión <span className='text-emerald-400 font-semibold'>duradera</span> en cada interacción digital.</p>
+            <div className='flex gap-1 sm:gap-5 md:gap-10 sm:text-start text-center justify-center lg:justify-start first-letter w-1/2 lg:w-1/2 sm:w-11/12 mt-5 mb-10 lg:mb-0 flex-wrap lg:flex-nowrap'>
+              <ul className='list-disc lg:ml-5 dark:text-slate-300'>
                   <li className='font-medium'>Investigación de Usuario</li>
                   <li className='font-medium'>Wireframing y Prototipado</li>
                   <li className='font-medium'>Diseño de Interfaz de Usuario (UI)</li>
@@ -70,9 +70,9 @@ export const HeroScroll = () => {
         {/* SECCION 2 */}
         <div className="text flex flex-col items-center lg:-ml-10 mt-20 lg:mt-32 text-center lg:text-start">
             <h1 className='text-3xl sm:text-4xl md:text-5xl  font-bold w-1/2 dark:text-slate-300'>Desarrollo<span className='text-emerald-400 block'>Backend</span></h1>
-            <p className='mt-5 w-1/2 text-xl font-semibold dark:text-slate-300'>En <span className='text-emerald-400 font-semibold'>Dev Design Studio,</span> entendemos que el <span className='text-emerald-400 font-semibold'>Desarrollo Backend</span> es el motor que impulsa las experiencias digitales <span className='text-emerald-400 font-semibold'>excepcionales.</span> Nuestros servicios en esta área están diseñados para construir la columna vertebral robusta que respalda la <span className='text-emerald-400 font-semibold'>interactividad</span> y la <span className='text-emerald-400 font-semibold'>eficiencia</span> de tu plataforma en línea.</p>
-            <div className='flex gap-10 justify-start first-letter w-1/2 mt-5 mb-10 lg:mb-0'>
-              <ul className='list-disc ml-5 dark:text-slate-300'>
+            <p className='mt-5 lg:w-1/2 w-10/12 text-xl font-semibold dark:text-slate-300'>En <span className='text-emerald-400 font-semibold'>Dev Design Studio,</span> entendemos que el <span className='text-emerald-400 font-semibold'>Desarrollo Backend</span> es el motor que impulsa las experiencias digitales <span className='text-emerald-400 font-semibold'>excepcionales.</span> Nuestros servicios en esta área están diseñados para construir la columna vertebral robusta que respalda la <span className='text-emerald-400 font-semibold'>interactividad</span> y la <span className='text-emerald-400 font-semibold'>eficiencia</span> de tu plataforma en línea.</p>
+            <div className='flex gap-1 sm:gap-5 md:gap-10 sm:text-start text-center justify-center lg:justify-start first-letter w-1/2 lg:w-1/2 sm:w-11/12 mt-5 mb-10 lg:mb-0 flex-wrap lg:flex-nowrap'>
+              <ul className='list-disc lg:ml-5 dark:text-slate-300'>
                   <li className='font-medium'>Desarrollo de Arquitectura Escalable</li>
                   <li className='font-medium'>Desarrollo de API Robusta</li>
                   <li className='font-medium'>Integración de Bases de Datos</li>
@@ -90,16 +90,15 @@ export const HeroScroll = () => {
         </div>
         {/* SECCION 2 */}
         <div className="text flex flex-col items-center lg:-ml-10 mt-20 lg:mt-32 text-center lg:text-start">
-            <h1 className='text-3xl sm:text-4xl md:text-5xl  font-bold w-1/2 dark:text-slate-300'>Ciber<span className='text-emerald-400'>seguridad</span></h1>
-            <p className='mt-5 w-1/2 text-xl font-semibold dark:text-slate-300'>En un mundo cada vez más conectado, la seguridad digital es <span className='text-emerald-400 font-semibold'>fundamental.</span> En <span className='text-emerald-400 font-semibold'>Dev Design Studio,</span> entendemos la importancia crítica de salvaguardar tu presencia en línea contra <span className='text-emerald-400 font-semibold'>amenazas cibernéticas.</span> Nuestros servicios de <span className='text-emerald-400 font-semibold'>ciberseguridad</span> están diseñados para proporcionar capas sólidas de <span className='text-emerald-400 font-semibold'>protección,</span> garantizando la <span className='text-emerald-400 font-semibold'></span>integridad, <span className='text-emerald-400 font-semibold'>confidencialidad</span> y <span className='text-emerald-400 font-semibold'>disponibilidad</span> de tus activos digitales.</p>
-            <div className='flex gap-10 justify-start first-letter w-1/2 mt-5 mb-10 lg:mb-0'>
-              <ul className='list-disc ml-5 dark:text-slate-300'>
-                  <li className='font-medium'>Protección contra Ataques Cibernéticos</li>
+            <h1 className='text-3xl sm:text-4xl md:text-5xl font-bold dark:text-slate-300'>Ciber<span className='text-emerald-400'>seguridad</span></h1>
+            <p className='mt-5 lg:w-1/2 w-10/12 text-xl font-semibold dark:text-slate-300'>En un mundo cada vez más conectado, la seguridad digital es <span className='text-emerald-400 font-semibold'>fundamental.</span> En <span className='text-emerald-400 font-semibold'>Dev Design Studio,</span> entendemos la importancia crítica de salvaguardar tu presencia en línea contra <span className='text-emerald-400 font-semibold'>amenazas cibernéticas.</span> Nuestros servicios de <span className='text-emerald-400 font-semibold'>ciberseguridad</span> están diseñados para proporcionar capas sólidas de <span className='text-emerald-400 font-semibold'>protección,</span> garantizando la <span className='text-emerald-400 font-semibold'></span>integridad, <span className='text-emerald-400 font-semibold'>confidencialidad</span> y <span className='text-emerald-400 font-semibold'>disponibilidad</span> de tus activos digitales.</p>
+            <div className='flex gap-1 sm:gap-5 md:gap-10 sm:text-start text-center justify-center lg:justify-start first-letter w-1/2 lg:w-1/2 sm:w-11/12 mt-5 mb-10 lg:mb-0 flex-wrap lg:flex-nowrap'>
+              <ul className='list-disc lg:ml-5 dark:text-slate-300'>
+                  <li className='font-medium'>Protecciónes basicas contra Ataques Cibernéticos</li>
                   <li className='font-medium'>Gestión de Identidad y Acceso (IAM)</li>
                   <li className='font-medium'>Cifrado de Datos</li>
               </ul>
               <ul className='list-disc dark:text-slate-300'>
-                  <li className='font-medium'>Respuesta a Incidentes</li>
                   <li className='font-medium'>Implementación de Políticas de Seguridad</li>
                   <li className='font-medium'>Cumplimiento Normativo</li>
               </ul>

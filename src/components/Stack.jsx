@@ -3,12 +3,12 @@ import SvgCss from '../svg/css.svg'
 import SvgJs from '../svg/js.svg'
 import SvgReact from '../svg/react.svg'
 import SvgPython from '../svg/python.svg'
-import SvgNode from '../svg/node.svg'
-import SvgVue from '../svg/vue.svg'
-import SvgAngular from '../svg/angular.svg'
-import SvgMongo from '../svg/mongo.svg'
 import SvgPhp from '../svg/php.svg'
 import SvgFigma from '../svg/figma.svg'
+import SvgSql from '../svg/sql.svg'
+import SvgTailwind from '../svg/tailwind.svg'
+import SvgBootstrap from '../svg/boostrap.svg'
+import SvgGit from '../svg/git.svg'
 
 
 
@@ -16,7 +16,7 @@ import SvgFigma from '../svg/figma.svg'
 
 export const Stack = () => {
     return (
-        <section className="bg-emerald-400 mt-10 dark:bg-slate-700">
+        <section id='tecnologias' className="bg-emerald-400 mt-10 dark:bg-slate-700">
             {/* STACK TEXT */}
             <div className="lg:w-1/2 w-10/12 text-center mx-auto pt-10">
                 <h1 className='text-3xl sm:text-4xl md:text-5xl font-bold text-gray-100'>Nuestro Stack <span className='text-emerald-700 dark:text-emerald-400'> Tecnologico</span></h1>
@@ -33,17 +33,17 @@ export const Stack = () => {
                     <img src={SvgJs} alt="" />
                     <img src={SvgReact} alt="" />
                     <img src={SvgPython} alt="" />
-                    <img src={SvgNode} alt="" />
+                    <img src={SvgTailwind} alt="" />
                 </div>
                 {/* FILE 2 */}
                 <div className='w-full flex  justify-center items-center gap-10 flex-wrap'>
-                    <img src={SvgVue} alt="" />
-                    <img src={SvgAngular} alt="" />
-                    <img src={SvgMongo} alt="" />
+                    <img src={SvgSql} alt="" />
+                    <img src={SvgGit} alt="" />
                     <img src={SvgPhp} alt="" />
                     <img src={SvgFigma} alt="" />
+                    <img src={SvgBootstrap} alt="" />
                 </div>
-                <p className='text-gray-100 w-1/2 mx-auto text-center mt-5 mb-5 font-bold'>Y mas. <span className='text-emerald-700 dark:text-emerald-400'> SQL,  MySQL, PostgreSQL, Django, Bootstrap, TailwindCSS, Redis, Sqlite, Cifrado, MFA, IAM</span></p>
+                <p className='text-gray-100 w-1/2 mx-auto text-center mt-5 mb-5 font-bold'>Y mas. <span className='text-emerald-700 dark:text-emerald-400'> PostgreSQL, Cifrado, Ajax, Jquery, Xampp</span></p>
             </div>
         </section>
     )
