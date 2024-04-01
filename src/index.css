@@ -17,3 +17,23 @@
     }
     
 }
+
+
+
+@media screen and (min-width: 2023px) {
+    #form{
+        margin-top: 300px;
+    }
+}
+
+@media screen and (min-width: 3100px) {
+    #form{
+        margin-top: 600px;
+    }
+}
+
+@media screen and (min-width: 5500px) {
+    #form{
+        margin-top: 900px;
+    }
+}

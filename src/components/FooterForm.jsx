@@ -2,6 +2,7 @@ import SvgFooter from '../svg/bg-footer.svg'
 import { Footer } from '../components/Footer'
 import { useState } from 'react'
 import axios from 'axios'
+import '../index.css';
 
 
 export const FooterForm = () => {
@@ -47,20 +48,20 @@ export const FooterForm = () => {
             <p className='text-white font-semibold w-3/4 ml-0 sm:ml-10 text-xl'>Ponte en contacto y haz realidad tus ideas digitales. Estamos aquí para convertir tus visiones en experiencias en línea extraordinarias. ¡Contestamos inmediatamente!</p>
           </div>
 
-          <form action="#" method="post" className='flex flex-col items-center justify-center gap-y-8 text-xl w-1/2'>
+          <form id='form' action="#" method="post" className='flex flex-col items-center justify-center gap-y-8 text-xl w-1/2 2xl:mt-10'>
             <div className='flex sm:space-x-4 space-x-0 flex-col sm:flex-row gap-10 sm:gap-0'>
-              <div className='flex flex-col text-white'>
+              <div className='flex flex-col'>
                 <input type="text" id="name" name="name" required="" placeholder='Nombre' className='rounded-full p-3 text-gray-400' value={name} onChange={(e) => setName(e.target.value)}/>
               </div>
-              <div className='flex flex-col text-white'>
+              <div className='flex flex-col'>
                 <input type="text" id="lastName" name="lastName" required="" placeholder='Apellidos' className='rounded-full p-3 text-gray-400' value={lastName} onChange={(e) => setLastName(e.target.value)}/>
               </div>
             </div>
             <div className='flex sm:space-x-4 space-x-0 flex-col sm:flex-row gap-10 sm:gap-0'>
-              <div className='flex flex-col text-white'>
+              <div className='flex flex-col'>
                 <input type="email" id="email" name="email" required="" placeholder='Correo' className='rounded-full p-3 text-gray-400' value={email} onChange={(e) => setEmail(e.target.value)}/>
               </div>
-              <div className='flex flex-col text-white'>  
+              <div className='flex flex-col'>  
                 <input type="tel" id="phoneNumber" name="phoneNumber" required="" placeholder='Telefono' className='rounded-full p-3 text-gray-400' value={mobile} onChange={(e) => setMobile(e.target.value)}/>
               </div>
             </div>

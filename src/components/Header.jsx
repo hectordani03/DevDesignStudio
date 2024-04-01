@@ -132,7 +132,7 @@ export const Header = () => {
                     <a
                         href="/#contactanos"
                         className="text-black font-semibold bg-emerald-400 p-2 px-5 rounded-3xl -mt-0  dark:text-slate-300
-                        dark:bg-emerald-700 dark:font-bold ml-4"
+                        dark:bg-emerald-700 dark:font-bold"
                         onClick={(e) => scrollToSection(e, '#contactanos')}
                     >
                         Contactanos
