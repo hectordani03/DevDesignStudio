@@ -8,7 +8,8 @@ import { PhoneCard } from './components/PhoneCard';
 import { MailCard } from './components/MailCard';
 import { AdressCard } from './components/AdressCard';
 import { PreguntasFrecuentes } from './components/Preguntas';
-import { FooterForm } from './components/FooterForm';
+// import { FooterForm } from './components/FooterForm';
+import { Footer } from './components/Footer';
 import { Home } from './components/Home.jsx';
 import { Proyectos } from './components/Proyectos';
 import { PREGUNTAS } from './preguntas';
@@ -60,8 +61,8 @@ function App() {
         })
       }
     </section>
-    <FooterForm></FooterForm>
-    {/* <Footer></Footer> */}
+    {/* <FooterForm></FooterForm> */}
+    <Footer></Footer>
       </section>
   </>
   )

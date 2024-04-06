@@ -15,10 +15,10 @@ export const Footer = () => {
     };
   
     return (
-      <section className='w-full bg-emerald-700 grid grid-cols-1 sm:grid-cols-3 relative flex-wrap h-auto' style={{ height: 'auto' }}>
+      <section className='w-full bg-emerald-500 grid grid-cols-1 sm:grid-cols-3 relative flex-wrap h-auto mt-20' style={{ height: 'auto' }}>
         <div className="flex flex-col justify-center items-center mt-10 sm:mt-10 sm:mb-10">
           <img className="w-56" src="src/assets/logo-dev-white.webp" alt="" />
-          <button className="bg-emerald-400 p-4 px-10 text-white font-bold text-2xl rounded-full mt-5 ">Contactanos</button>
+          <button className="bg-emerald-600 p-4 px-10 text-white font-bold text-2xl rounded-full mt-5 ">Contactanos</button>
         </div>
         <div className="flex flex-col justify-center items-center sm:items-start ml-0 mt-10 sm:mt-0 sm:ml-20 text-center sm:text-start">
           <h2 className="text-white font-bold text-2xl mb-1">Dev Design Studio</h2>

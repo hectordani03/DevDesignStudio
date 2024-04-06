@@ -4,13 +4,9 @@ import MobileStepper from '@mui/material/MobileStepper';
 import Paper from '@mui/material/Paper';
 import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft';
 import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
-import SwipeableViews from 'react-swipeable-views';
-import { autoPlay } from 'react-swipeable-views-utils';
 import Typography from '@mui/joy/Typography';
 import Button from '@mui/joy/Button';
 import { useState } from 'react';
-
-const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 export const Stepper = ({ images }) => {
   const theme = useTheme();
@@ -43,34 +39,28 @@ export const Stepper = ({ images }) => {
         className="dark:bg-slate-800"
       >
         <div className='w-full relative flex justify-center'>
-        <Typography className="text-white dark:text-white font-semibold text-3xl rounded-md px-3 py-2 w-2/12 text-center">{images[activeStep].label}</Typography>
+          <Typography className="text-white dark:text-white font-semibold text-3xl rounded-md px-3 py-2 w-2/12 text-center">{images[activeStep].label}</Typography>
         </div>
       </Paper>
-      <AutoPlaySwipeableViews
-        axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
-        index={activeStep}
-        onChangeIndex={handleStepChange}
-        enableMouseEvents
-        className='mt-5'
+      <Box
+        sx={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          mt: 5,
+        }}
       >
-        {images.map((step, index) => (
-          <div key={index}>
-            {Math.abs(activeStep - index) <= 2 ? (
-              <Box
-                component="img"
-                sx={{
-                  height: 'auto',
-                  display: 'block',
-                  overflow: 'hidden',
-                  width: 'auto',
-                }}
-                src={step.imgPath}
-                alt={step.label}
-              />
-            ) : null}
-          </div>
-        ))}
-      </AutoPlaySwipeableViews>
+        <img
+          src={images[activeStep].imgPath}
+          alt={images[activeStep].label}
+          style={{
+            height: 'auto',
+            display: 'block',
+            overflow: 'hidden',
+            width: 'auto',
+          }}
+        />
+      </Box>
       <MobileStepper
         steps={maxSteps}
         position="static"

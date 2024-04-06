@@ -1,5 +1,4 @@
 import { ImagenEquipo } from '../components/Equipo';
-import SvgEquipo from '../svg/equipo.svg'
 import SvgEsteban from '../svg/esteban.svg'
 import SvgHector from '../svg/hector.svg'
 
