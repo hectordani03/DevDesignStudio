@@ -19,8 +19,13 @@ export const HeroScroll = () => {
               </ul>
             </div> 
         </div>
-        <div className="w-full min-h-screen bg-center bg-no-repeat bg-cover relative bg-fixed bg-[url('/src/assets/hero-1.jpg')]">
-        </div>
+        <div className="w-full min-h-screen bg-center bg-no-repeat bg-cover relative">
+        <img
+          className="absolute top-0 left-0 w-full h-full object-cover"
+          src="/src/assets/hero-1.jpg"
+          alt=""
+        />
+      </div>
         {/* SECCION 2 */}
         <div className="text flex flex-col items-center lg:-ml-10 mt-20 lg:mt-32 text-center lg:text-start">
             <h1 className='text-3xl sm:text-4xl md:text-5xl  font-bold w-1/2 dark:text-slate-300'>Desarrollo<span className='text-emerald-400 block'>Frontend</span></h1>
@@ -38,8 +43,13 @@ export const HeroScroll = () => {
               </ul>
             </div>
         </div>
-        <div className="w-full min-h-screen bg-center bg-no-repeat bg-cover relative bg-fixed bg-[url('/src/assets/hero-2.jpg')]">
-        </div>
+        <div className="w-full min-h-screen bg-center bg-no-repeat bg-cover relative">
+        <img
+          className="absolute top-0 left-0 w-full h-full object-cover"
+          src="/src/assets/hero-2.jpg"
+          alt=""
+        />
+      </div>
         {/* SECCION 2 */}
         <div className="text flex flex-col items-center lg:-ml-10 mt-20 lg:mt-32 text-center lg:text-start">
             <h1 className='text-3xl sm:text-4xl md:text-5xl  font-bold w-1/2 text-emerald-400'>UX / UI<span className='block text-black dark:text-slate-300'>Design</span></h1>
@@ -59,8 +69,13 @@ export const HeroScroll = () => {
               </ul>
             </div>
         </div>
-        <div className="w-full min-h-screen bg-center bg-no-repeat bg-cover relative bg-fixed bg-[url('/src/assets/hero-3.jpg')]">
-        </div>
+        <div className="w-full min-h-screen bg-center bg-no-repeat bg-cover relative">
+        <img
+          className="absolute top-0 left-0 w-full h-full object-cover"
+          src="/src/assets/hero-3.jpg"
+          alt=""
+        />
+      </div>
         {/* SECCION 2 */}
         <div className="text flex flex-col items-center lg:-ml-10 mt-20 lg:mt-32 text-center lg:text-start">
             <h1 className='text-3xl sm:text-4xl md:text-5xl  font-bold w-1/2 dark:text-slate-300'>Desarrollo<span className='text-emerald-400 block'>Backend</span></h1>
@@ -80,8 +95,13 @@ export const HeroScroll = () => {
               </ul>
             </div>
         </div>
-        <div className="w-full min-h-screen bg-center bg-no-repeat bg-cover relative bg-fixed bg-[url('/src/assets/hero-4.jpg')]">
-        </div>
+        <div className="w-full min-h-screen bg-center bg-no-repeat bg-cover relative">
+        <img
+          className="absolute top-0 left-0 w-full h-full object-cover"
+          src="/src/assets/hero-4.jpg"
+          alt=""
+        />
+      </div>
         {/* SECCION 2 */}
         <div className="text flex flex-col items-center lg:-ml-10 mt-20 lg:mt-32 text-center lg:text-start">
             <h1 className='text-3xl sm:text-4xl md:text-5xl font-bold dark:text-slate-300'>Ciber<span className='text-emerald-400'>seguridad</span></h1>
@@ -98,8 +118,13 @@ export const HeroScroll = () => {
               </ul>
             </div>
         </div>
-        <div className="w-full min-h-screen bg-center bg-no-repeat bg-cover relative bg-fixed bg-[url('/src/assets/hero-5.jpg')]">
-        </div>
+        <div className="w-full min-h-screen bg-center bg-no-repeat bg-cover relative">
+        <img
+          className="absolute top-0 left-0 w-full h-full object-cover"
+          src="/src/assets/hero-5.jpg"
+          alt=""
+        />
+      </div>
         
     </main>
   );
