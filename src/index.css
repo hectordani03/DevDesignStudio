@@ -37,3 +37,26 @@
         margin-top: 900px;
     }
 }
+
+#enlaces a.text-black {
+    text-decoration: none;
+    position: relative;
+}
+
+#enlaces a.text-black::after {
+    content: '';
+    position: absolute;
+    bottom: 1px;
+    left: 0;
+    width: 0;
+    height: 4px; /* Aumentamos el grosor del subrayado */
+    background-color: #38d49c; /* Cambiamos el color a verde */
+    transition: width 0.3s ease, margin-left 0.3s ease; /* Agregamos la transición de margen */
+    margin-left: 15px;
+    border-radius: 100px;
+}
+
+#enlaces a.text-black:hover::after {
+    width: 80%; /* Ancho del subrayado al hacer hover */
+}
+

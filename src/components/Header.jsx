@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react';
 import { FaRegMoon } from "react-icons/fa";
 import LogoHeader from '../assets/logo-dev.png'
 import LogoHeader2 from '../assets/logo-dev-white.webp'
+import SvgHome from '../svg/home-img.svg'
+import SvgHome2 from '../svg/home-img-2.svg'
 import '../index.css';
 
 export const Header = () => {
@@ -64,6 +66,8 @@ export const Header = () => {
               });
             }
           };
+
+    
     return (
 <div id='header' className='sticky top-0 z-50 transition-all bg-white dark:bg-slate-800 '>
         <header className='bg-white dark:bg-slate-800 lg:bg-inherit'>
@@ -80,7 +84,7 @@ export const Header = () => {
                 </div>
                  {/* HAMBURGER BUTTON */}
                 <div className="block lg:hidden">
-                    <button className="flex items-center px-3 py-2 border rounded text-black border-black" onClick={HiddenFunction}>
+                    <button className="flex items-center px-3 py-2 border rounded text-black border-black dark:border-white dark:text-white" onClick={HiddenFunction}>
                     <svg
                         className="fill-current h-3 w-3"
                         viewBox="0 0 20 20"
@@ -93,46 +97,39 @@ export const Header = () => {
                 </div>
                 {/* HEADER LINKS */}
                 <div className={`links ${esLinksHidden ? 'hidden' : ''} w-full block lg:flex-grow lg:flex lg:items-center lg:w-auto`}>
-                    <div className="text-md flex-col items-center lg:flex-row lg:flex-grow flex gap-1 justify-center">
-                    <a
-                        href="/#servicios"
-                        className="text-black font-semibold  dark:text-slate-300 hover:bg-emerald-400 px-5 p-2 rounded-xl dark:hover:bg-emerald-700 transition-colors"
-                        onClick={(e) => scrollToSection(e, '#servicios')}
-                    >
-                        Servicios
-                    </a>
+                    <div id='enlaces' className="text-md flex-col items-center lg:flex-row lg:flex-grow flex gap-1 justify-center">
+                    
                     <a
                         href="/#tecnologias"
-                        className="text-black font-semibold  dark:text-slate-300 hover:bg-emerald-400 px-5 p-2 rounded-xl dark:hover:bg-emerald-700 transition-colors"
+                        className="text-black font-semibold  dark:text-slate-300 px-5 p-2 rounded-xl transition-colors"
                         onClick={(e) => scrollToSection(e, '#tecnologias')}
                     >
                         Tecnologias
                     </a>
                     <a
                         href="/#proyectos"
-                        className="text-black font-semibold  dark:text-slate-300 hover:bg-emerald-400 px-5 p-2 rounded-xl dark:hover:bg-emerald-700 transition-colors"
+                        className="text-black font-semibold  dark:text-slate-300  px-5 p-2 rounded-xl transition-colors"
                         onClick={(e) => scrollToSection(e, '#proyectos')}
                     >
                         Proyectos
                     </a>
                     <a
                         href="/#sobre-nosotros"
-                        className="text-black font-semibold  dark:text-slate-300 hover:bg-emerald-400 px-5 p-2 rounded-xl dark:hover:bg-emerald-700 transition-colors"
+                        className="text-black font-semibold  dark:text-slate-300  px-5 p-2 rounded-xl transition-colors"
                         onClick={(e) => scrollToSection(e, '#sobre-nosotros')}
                     >
                         Sobre nosotros
                     </a>
                     <a
                         href="/#preguntas-frecuentes"
-                        className="text-black font-semibold  dark:text-slate-300 hover:bg-emerald-400 px-5 p-2 rounded-xl dark:hover:bg-emerald-700 transition-colors"
+                        className="text-black font-semibold  dark:text-slate-300 px-5 p-2 rounded-xl transition-colors"
                         onClick={(e) => scrollToSection(e, '#preguntas-frecuentes')}
                     >
                         Preguntas Frecuentes
                     </a>
                     <a
                         href="/#contactanos"
-                        className="text-black font-semibold bg-emerald-400 p-2 px-5 rounded-3xl -mt-0  dark:text-slate-300
-                        dark:bg-emerald-700 dark:font-bold"
+                        className="text-black font-semibold  p-2 px-5 rounded-3xl -mt-0  dark:text-slate-300 dark:font-bold"
                         onClick={(e) => scrollToSection(e, '#contactanos')}
                     >
                         Contactanos
@@ -153,3 +150,22 @@ export const Header = () => {
 </div>
                     )
                 }
+
+
+                
+export const ImgHome = ({ theme }) => {
+  const [imageKey, setImageKey] = useState(0);
+
+  useEffect(() => {
+    setImageKey(prevKey => prevKey + 1);
+  }, [theme]);
+
+  return (
+    <img
+      className={`w-auto max-w-full h-auto sm:mr-12 lg:mr-0`}
+      key={imageKey}
+      src={theme === 'dark' ? SvgHome2 : SvgHome}
+      alt=""
+    />
+  );
+};

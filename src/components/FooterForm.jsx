@@ -51,10 +51,10 @@ export const FooterForm = () => {
           <form id='form' action="#" method="post" className='flex flex-col items-center justify-center gap-y-8 text-xl w-1/2 2xl:mt-10'>
             <div className='flex sm:space-x-4 space-x-0 flex-col sm:flex-row gap-10 sm:gap-0'>
               <div className='flex flex-col'>
-                <input type="text" id="name" name="name" required="" placeholder='Nombre' className='rounded-full p-3 text-gray-400' value={name} onChange={(e) => setName(e.target.value)}/>
+                <input type="text" id="name" name="name" required="" placeholder='Nombre' pattern="[a-zA-ZñÑ]" maxLength="50" className='rounded-full p-3 text-gray-400' value={name} onChange={(e) => setName(e.target.value)}/>
               </div>
               <div className='flex flex-col'>
-                <input type="text" id="lastName" name="lastName" required="" placeholder='Apellidos' className='rounded-full p-3 text-gray-400' value={lastName} onChange={(e) => setLastName(e.target.value)}/>
+                <input type="text" id="lastName" name="lastName" required="" placeholder='Apellidos'  pattern="[a-zA-ZñÑ]" maxLength="50" className='rounded-full p-3 text-gray-400' value={lastName} onChange={(e) => setLastName(e.target.value)}/>
               </div>
             </div>
             <div className='flex sm:space-x-4 space-x-0 flex-col sm:flex-row gap-10 sm:gap-0'>

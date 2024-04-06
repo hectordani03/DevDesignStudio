@@ -43,7 +43,7 @@ export const Stepper = ({ images }) => {
         className="dark:bg-slate-800"
       >
         <div className='w-full relative flex justify-center'>
-        <Typography className="bg-blue-500 text-white dark:text-white font-semibold text-3xl rounded-md px-3 py-2 w-2/12 text-center">{images[activeStep].label}</Typography>
+        <Typography className="text-white dark:text-white font-semibold text-3xl rounded-md px-3 py-2 w-2/12 text-center">{images[activeStep].label}</Typography>
         </div>
       </Paper>
       <AutoPlaySwipeableViews
@@ -81,7 +81,10 @@ export const Stepper = ({ images }) => {
             size="small"
             onClick={handleNext}
             disabled={activeStep === maxSteps - 1}
-            className='pl-3'
+            className='pl-3 py-1'
+            sx={{ backgroundColor: '#38d49c','&:hover': {
+              backgroundColor: '#32bf8c',
+            },}}
           >
             Siguiente
             {theme.direction === 'rtl' ? (
@@ -96,12 +99,15 @@ export const Stepper = ({ images }) => {
             size="small"
             onClick={handleBack}
             disabled={activeStep === 0}
-            className="pr-3"
+            className='pr-3 py-1'
+            sx={{ backgroundColor: '#38d49c','&:hover': {
+              backgroundColor: '#32bf8c',
+            },}}
           >
             {theme.direction === 'rtl' ? (
-              <KeyboardArrowRight />
+              <KeyboardArrowRight/>
             ) : (
-              <KeyboardArrowLeft />
+              <KeyboardArrowLeft/>
             )}
             Anterior
           </Button>
