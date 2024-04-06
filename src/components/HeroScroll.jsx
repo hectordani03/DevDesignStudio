@@ -19,7 +19,7 @@ export const HeroScroll = () => {
               </ul>
             </div> 
         </div>
-        <div className="w-full min-h-screen bg-center bg-no-repeat bg-cover relative bg-fixed bg-[url('/src/assets/hero-1.png')]">
+        <div className="w-full min-h-screen bg-center bg-no-repeat bg-cover relative bg-fixed bg-[url('/src/assets/hero-1.jpg')]">
         </div>
         {/* SECCION 2 */}
         <div className="text flex flex-col items-center lg:-ml-10 mt-20 lg:mt-32 text-center lg:text-start">
