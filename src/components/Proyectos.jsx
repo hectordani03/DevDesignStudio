@@ -4,34 +4,34 @@ export const Proyectos = () => {
     const modalImagesForUs = [
         {
             label: 'HomePage',
-            imgPath: '../assets/For-Us.png',
+            imgPath: '/src/assets/For-Us.png',
         },
         {
             label: 'Posts',
-            imgPath: '../assets/For-Us-2.png',
-
+            imgPath: '/src/assets/For-Us-2.png',
+            
         },
         {
             label: 'Profile',
-            imgPath: '../assets/For-Us-4.png',
+            imgPath: '/src/assets/For-Us-4.png',
         },
     ];
 
     const modalImagesSportX = [
         {
             label: 'DashBoard',
-            imgPath: '../assets/SportX.png',
+            imgPath: '/src/assets/SportX.png',
         },
     ];
 
     const modalImagesCineHub = [
         {
             label: 'HomePage',
-            imgPath: '../assets/Cinehub.jpeg',
+            imgPath: '/src/assets/Cinehub.jpeg',
         },
         {
             label: 'Posts',
-            imgPath: '../assets/Cinehub-2.jpeg',
+            imgPath: '/src/assets/Cinehub-2.jpeg',
         },
     ];
 
@@ -40,19 +40,19 @@ export const Proyectos = () => {
             <h1 className=' mt-20 text-center mb-10 text-3xl sm:text-4xl md:text-5xl  font-bold w-12/12 dark:text-slate-300'>Nuestros<span className='text-emerald-400 ml-2 lg:ml-4'>Proyectos</span></h1>
             <div className="grid gap-8 justify-items-center grid-cols-1 xl:grid-cols-2">
                 <CardProyects
-                    src={"../assets/For-Us.png"}
+                    src={"/src/assets/For-Us.png"}
                     title={"For Us"}
                     info={"Foro Web de discusiones sobre objetivos de la Onu"}
                     modalImages={modalImagesForUs}
                 />
                 <CardProyects
-                    src={"../assets/Sportx.png"}
+                    src={"/src/assets/Sportx.png"}
                     title={"For Us"}
                     info={"Aplicacion Web sobre un sistema de gestion de almacen"}
                     modalImages={modalImagesSportX}
                 />
                 <CardProyects
-                    src={"../assets/cinehub-2.jpeg"}
+                    src={"/src/assets/cinehub-2.jpeg"}
                     title={"For Us"}
                     info={"Blog Web sobre Cine"}
                     modalImages={modalImagesCineHub}

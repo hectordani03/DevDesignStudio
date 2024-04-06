@@ -1,8 +1,8 @@
-import heroImage1 from '../assets/hero-1.png';
-import heroImage2 from '../assets/hero-2.jpg';
-import heroImage3 from '../assets/hero-3.jpg';
-import heroImage4 from '../assets/hero-4.jpg';
-import heroImage5 from '../assets/hero-5.jpg';
+import heroImage1 from '/src/assets/hero-1.png';
+import heroImage2 from '/src/assets/hero-2.jpg';
+import heroImage3 from '/src/assets/hero-3.jpg';
+import heroImage4 from '/src/assets/hero-4.jpg';
+import heroImage5 from '/src/assets/hero-5.jpg';
 
 export const HeroScroll = () => {
   return (
