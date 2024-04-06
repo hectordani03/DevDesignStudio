@@ -1,9 +1,3 @@
-import heroImage1 from '/src/assets/hero-1.png';
-import heroImage2 from '/src/assets/hero-2.jpg';
-import heroImage3 from '/src/assets/hero-3.jpg';
-import heroImage4 from '/src/assets/hero-4.jpg';
-import heroImage5 from '/src/assets/hero-5.jpg';
-
 export const HeroScroll = () => {
   return (
     <main id='servicios' className="lg:grid lg:grid-cols-2 lg:grid-rows-5 border-black dark:bg-slate-800">
@@ -25,7 +19,7 @@ export const HeroScroll = () => {
               </ul>
             </div> 
         </div>
-        <div className="w-full min-h-screen bg-center bg-no-repeat bg-cover relative bg-fixed" style={{backgroundImage: `url(${heroImage1})`}}>
+        <div className="w-full min-h-screen bg-center bg-no-repeat bg-cover relative bg-fixed bg-[url('/src/assets/hero-1.png')]">
         </div>
         {/* SECCION 2 */}
         <div className="text flex flex-col items-center lg:-ml-10 mt-20 lg:mt-32 text-center lg:text-start">
@@ -44,7 +38,7 @@ export const HeroScroll = () => {
               </ul>
             </div>
         </div>
-        <div className="w-full min-h-screen bg-center bg-no-repeat bg-cover relative bg-fixed" style={{backgroundImage: `url(${heroImage2})`}}>
+        <div className="w-full min-h-screen bg-center bg-no-repeat bg-cover relative bg-fixed bg-[url('/src/assets/hero-2.jpg')]">
         </div>
         {/* SECCION 2 */}
         <div className="text flex flex-col items-center lg:-ml-10 mt-20 lg:mt-32 text-center lg:text-start">
@@ -65,7 +59,7 @@ export const HeroScroll = () => {
               </ul>
             </div>
         </div>
-        <div className="w-full min-h-screen bg-center bg-no-repeat bg-cover relative bg-fixed" style={{backgroundImage: `url(${heroImage3})`}}>
+        <div className="w-full min-h-screen bg-center bg-no-repeat bg-cover relative bg-fixed bg-[url('/src/assets/hero-3.jpg')]">
         </div>
         {/* SECCION 2 */}
         <div className="text flex flex-col items-center lg:-ml-10 mt-20 lg:mt-32 text-center lg:text-start">
@@ -86,7 +80,7 @@ export const HeroScroll = () => {
               </ul>
             </div>
         </div>
-        <div className="w-full min-h-screen bg-center bg-no-repeat bg-cover relative bg-fixed" style={{backgroundImage: `url(${heroImage4})`}}>
+        <div className="w-full min-h-screen bg-center bg-no-repeat bg-cover relative bg-fixed bg-[url('/src/assets/hero-4.jpg')]">
         </div>
         {/* SECCION 2 */}
         <div className="text flex flex-col items-center lg:-ml-10 mt-20 lg:mt-32 text-center lg:text-start">
@@ -104,7 +98,7 @@ export const HeroScroll = () => {
               </ul>
             </div>
         </div>
-        <div className="w-full min-h-screen bg-center bg-no-repeat bg-cover relative bg-fixed" style={{backgroundImage: `url(${heroImage5})`}}>
+        <div className="w-full min-h-screen bg-center bg-no-repeat bg-cover relative bg-fixed bg-[url('/src/assets/hero-5.jpg')]">
         </div>
         
     </main>
