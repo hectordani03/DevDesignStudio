@@ -1,3 +1,11 @@
+import HeroScroll1 from '../assets/hero-1.jpg'
+import HeroScroll2 from '../assets/hero-2.jpg'
+import HeroScroll3 from '../assets/hero-3.jpg'
+import HeroScroll4 from '../assets/hero-4.jpg'
+import HeroScroll5 from '../assets/hero-5.jpg'
+
+
+
 export const HeroScroll = () => {
   return (
     <main id='servicios' className="lg:grid lg:grid-cols-2 lg:grid-rows-5 border-black dark:bg-slate-800">
@@ -22,7 +30,7 @@ export const HeroScroll = () => {
         <div className="w-full min-h-screen bg-center bg-no-repeat bg-cover relative">
         <img
           className="absolute top-0 left-0 w-full h-full object-cover"
-          src="/src/assets/hero-1.jpg"
+          src={HeroScroll1}
           alt=""
         />
       </div>
@@ -46,7 +54,7 @@ export const HeroScroll = () => {
         <div className="w-full min-h-screen bg-center bg-no-repeat bg-cover relative">
         <img
           className="absolute top-0 left-0 w-full h-full object-cover"
-          src="/src/assets/hero-2.jpg"
+          src={HeroScroll2}
           alt=""
         />
       </div>
@@ -72,7 +80,7 @@ export const HeroScroll = () => {
         <div className="w-full min-h-screen bg-center bg-no-repeat bg-cover relative">
         <img
           className="absolute top-0 left-0 w-full h-full object-cover"
-          src="/src/assets/hero-3.jpg"
+          src={HeroScroll3}
           alt=""
         />
       </div>
@@ -98,7 +106,7 @@ export const HeroScroll = () => {
         <div className="w-full min-h-screen bg-center bg-no-repeat bg-cover relative">
         <img
           className="absolute top-0 left-0 w-full h-full object-cover"
-          src="/src/assets/hero-4.jpg"
+          src={HeroScroll4}
           alt=""
         />
       </div>
@@ -121,7 +129,7 @@ export const HeroScroll = () => {
         <div className="w-full min-h-screen bg-center bg-no-repeat bg-cover relative">
         <img
           className="absolute top-0 left-0 w-full h-full object-cover"
-          src="/src/assets/hero-5.jpg"
+          src={HeroScroll5}
           alt=""
         />
       </div>
