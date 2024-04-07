@@ -1,7 +1,7 @@
 import { CardProyects } from './CardProyect';
 import ForUs from '../assets/For-Us.png'
-import Cinehub from '../assets/Sportx.png'
-import SportX from '../assets/cinehub-2.jpeg'
+import SportX from '../assets/Sportx.png'
+import Cinehub from '../assets/cinehub-2.jpeg'
 
 export const Proyectos = () => {
     const modalImagesForUs = [
