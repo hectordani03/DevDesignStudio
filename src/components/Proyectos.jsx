@@ -1,40 +1,46 @@
 import { CardProyects } from './CardProyect';
+
 import ForUs from '../assets/For-Us.png'
+import ForUs2 from '../assets/For-Us-2.png'
+import ForUs3 from '../assets/For-Us-4.png'
+
 import SportX from '../assets/Sportx.png'
-import Cinehub from '../assets/For-Us.png'
+
+import Cinehub from '../assets/Cinehub-2.jpeg'
+import Cinehub2 from '../assets/Cinehub.jpeg'
 
 export const Proyectos = () => {
     const modalImagesForUs = [
         {
             label: 'HomePage',
-            imgPath: '../assets/For-Us.png',
+            imgPath: ForUs,
         },
         {
             label: 'Posts',
-            imgPath: '../assets/For-Us-2.png',
+            imgPath: ForUs2,
             
         },
         {
             label: 'Profile',
-            imgPath: '../assets/For-Us-4.png',
+            imgPath: ForUs3,
         },
     ];
 
     const modalImagesSportX = [
         {
             label: 'DashBoard',
-            imgPath: '../assets/SportX.png',
+            imgPath: SportX,
         },
     ];
 
     const modalImagesCineHub = [
         {
             label: 'HomePage',
-            imgPath: '../assets/Cinehub.jpeg',
+            imgPath: Cinehub2,
         },
         {
             label: 'Posts',
-            imgPath: '../assets/Cinehub-2.jpeg',
+            imgPath: Cinehub,
         },
     ];
 
