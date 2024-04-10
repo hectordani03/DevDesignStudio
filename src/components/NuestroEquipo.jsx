@@ -1,6 +1,7 @@
 import { ImagenEquipo } from '../components/Equipo';
 import SvgEsteban from '../svg/esteban.svg'
 import SvgHector from '../svg/hector.svg'
+import '../index.css'
 
 
 export const NuestroEquipo = () =>{
@@ -11,11 +12,13 @@ export const NuestroEquipo = () =>{
             <ImagenEquipo
             name={"Hector Martinez"}
             role={"Frontend Developer"}
-            route={SvgHector}></ImagenEquipo>
+            route={SvgHector}
+            className=" scroll-animation"></ImagenEquipo>
             <ImagenEquipo
             name={"Esteban Mancilla"}
             role={"Backend Developer"}
-            route={SvgEsteban}></ImagenEquipo>
+            route={SvgEsteban}
+            className=" scroll-animation"></ImagenEquipo>
         </div>
       </section>
     )

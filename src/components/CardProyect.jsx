@@ -7,6 +7,7 @@ import ModalClose from '@mui/joy/ModalClose';
 import Sheet from '@mui/joy/Sheet';
 import { Stepper } from './ModalProyects';
 import { useState } from 'react';
+import '../index.css';
 
 export const CardProyects = ({ src, title, info, modalImages }) => {
   const [open, setOpen] = useState(false);
@@ -43,10 +44,10 @@ export const CardProyects = ({ src, title, info, modalImages }) => {
                 <Typography level="title-lg" textColor="#fff">
                     {title}
                 </Typography>
-                <Typography  textColor="#fff">
+                <Typography  textColor="#fff" sx={{ width: '70%' }}>
                     {info}
                 </Typography>
-                <button
+                <button id="ver-mas"
                     className='bg-emerald-500 w-2/12 rounded-2xl text-white absolute right-4 py-1 text-md font-semibold'
                     onClick={() => setOpen(true)}
                 >

@@ -7,6 +7,7 @@ import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
 import Typography from '@mui/joy/Typography';
 import Button from '@mui/joy/Button';
 import { useState } from 'react';
+import '../index.css';
 
 export const Stepper = ({ images }) => {
   const theme = useTheme();
@@ -26,7 +27,10 @@ export const Stepper = ({ images }) => {
   };
 
   return (
-    <Box sx={{ width: 'auto', flexGrow: 1 }}>
+    <Box sx={{ width: 'auto', flexGrow: 1 ,
+    '@media screen and (max-width: 436px)': {
+        width: '100%',
+    },}}>
       <Paper
         square
         elevation={0}
@@ -48,6 +52,9 @@ export const Stepper = ({ images }) => {
           justifyContent: 'center',
           alignItems: 'center',
           mt: 5,
+        '@media screen and (max-width: 436px)': {
+            mt: 0,
+        },
         }}
       >
         <img
@@ -59,6 +66,7 @@ export const Stepper = ({ images }) => {
             overflow: 'hidden',
             width: 'auto',
           }}
+          
         />
       </Box>
       <MobileStepper

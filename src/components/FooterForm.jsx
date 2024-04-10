@@ -35,7 +35,7 @@ export const FooterForm = () => {
   }
 
     return (
-        <section id='contactanos' className='relative dark:bg-slate-800' style={{height: '120vh' }}>
+        <section className='relative dark:bg-slate-800' style={{height: '120vh' }}>
       <div
       className='relative inset-0 bg-cover bg-no-repeat'
       style={{

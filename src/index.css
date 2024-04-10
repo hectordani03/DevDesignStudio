@@ -60,3 +60,34 @@
     width: 80%; /* Ancho del subrayado al hacer hover */
 }
 
+@media (max-width: 1024px) {
+    #header .links{
+        opacity: 0; /* Inicialmente la opacidad está en 0 */
+        transition: opacity 0.5s ease-in-out;
+    }
+}
+
+.scroll-animation {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  }
+  
+  .scroll-animation.animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  @media (max-width: 436px){     
+      #tecnologias img:nth-child(1),
+      #tecnologias img:nth-child(2),
+      #tecnologias img:nth-child(3),
+      #tecnologias img:nth-child(4){
+        margin-bottom: -30px;
+    }
+
+    
+    #ver-mas{
+        width: 22%;
+    }
+}

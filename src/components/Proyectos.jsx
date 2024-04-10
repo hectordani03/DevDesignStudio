@@ -46,25 +46,28 @@ export const Proyectos = () => {
 
     return (
         <section id='proyectos' className="flex flex-col items-center justify-center dark:bg-slate-800">
-            <h1 className=' mt-20 text-center mb-10 text-3xl sm:text-4xl md:text-5xl  font-bold w-12/12 dark:text-slate-300'>Nuestros<span className='text-emerald-400 ml-2 lg:ml-4'>Proyectos</span></h1>
+            <h1 className=' mt-20 text-center mb-10 text-3xl sm:text-4xl md:text-5xl  font-bold w-12/12 dark:text-slate-300 scroll-animation'>Nuestros<span className='text-emerald-400 ml-2 lg:ml-4'>Proyectos</span></h1>
             <div className="grid gap-8 justify-items-center grid-cols-1 xl:grid-cols-2">
                 <CardProyects
                     src={ForUs}
                     title={"For Us"}
                     info={"Foro Web de discusiones sobre objetivos de la Onu"}
                     modalImages={modalImagesForUs}
+                    className=" scroll-animation"
                 />
                 <CardProyects
                     src={SportX}
                     title={"For Us"}
                     info={"Aplicacion Web sobre un sistema de gestion de almacen"}
                     modalImages={modalImagesSportX}
+                    className=" scroll-animation"
                 />
                 <CardProyects
                     src={Cinehub}
                     title={"For Us"}
                     info={"Blog Web sobre Cine"}
                     modalImages={modalImagesCineHub}
+                    className=" scroll-animation"
                 />
             </div>
         </section>
