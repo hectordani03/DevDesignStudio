@@ -35,7 +35,7 @@ export const Footer = () => {
         <div className="flex flex-col justify-center items-center sm:items-start mt-10 sm:mt-0 text-center sm:text-start mb-10 sm:mb-0">
           <h2 className="text-white font-bold text-2xl mb-3 scroll-animation">Contactanos</h2>
           <p className="text-white font-semibold">+52 314 166 9964</p>
-          <p className="text-white font-semibol">+52 1 314 100 8320</p>
+          <p className="text-white font-semibol">+52 314 100 8320</p>
           <p className="text-white font-semibold">devdesignstudioinfo@gmail.com</p>
           <p className="text-white font-semibold">hectormtzinfo@gmail.com</p>
           <p className="text-white font-semibold">emancilla.loz14@gmail.com</p>

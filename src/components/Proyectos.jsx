@@ -57,14 +57,14 @@ export const Proyectos = () => {
                 />
                 <CardProyects
                     src={SportX}
-                    title={"For Us"}
+                    title={"SportX"}
                     info={"Aplicacion Web sobre un sistema de gestion de almacen"}
                     modalImages={modalImagesSportX}
                     className=" scroll-animation"
                 />
                 <CardProyects
                     src={Cinehub}
-                    title={"For Us"}
+                    title={"Cine-Hub"}
                     info={"Blog Web sobre Cine"}
                     modalImages={modalImagesCineHub}
                     className=" scroll-animation"
