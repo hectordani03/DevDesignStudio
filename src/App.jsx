@@ -49,10 +49,10 @@ function App() {
       </section>
         <img className='lg:mr-20 mt-10 w-auto max-w-full h-auto scroll-animation' src={SvgInfo} alt="" />
     </section>
-    <section className='dark:bg-slate-800'>
+    {/* <section className='dark:bg-slate-800'>
       <h1 className='text-4xl md:text-5xl font-bold mt-20 text-center dark:text-white scroll-animation'>Nuestro <span className='text-emerald-400'>Equipo</span></h1>
       <NuestroEquipo></NuestroEquipo>
-    </section>
+    </section> */}
 
     <section className='flex mt-20 flex-col dark:bg-slate-800'>
     <h1 className='text-4xl md:text-5xl font-bold mt-20 text-center dark:text-white scroll-animation'>Contacta<span className='text-emerald-400'>nos</span></h1>

@@ -9,6 +9,13 @@ import SportX from '../assets/Sportx.png'
 import Cinehub from '../assets/Cinehub-2.jpeg'
 import Cinehub2 from '../assets/Cinehub.jpeg'
 
+import Josefina1 from '../assets/1.png'
+import Josefina2 from '../assets/2.png'
+import Josefina3 from '../assets/3.png'
+import Josefina4 from '../assets/4.png'
+import Josefina5 from '../assets/5.png'
+import Josefina7 from '../assets/7.png'
+
 export const Proyectos = () => {
     const modalImagesForUs = [
         {
@@ -44,6 +51,29 @@ export const Proyectos = () => {
         },
     ];
 
+    const modalImagesJosefina = [
+        {
+            label: 'Galeria',
+            imgPath: Josefina7,
+        },
+        {
+            label: 'Galeria',
+            imgPath: Josefina2,
+        },
+        {
+            label: 'Contacto',
+            imgPath: Josefina3,
+        },
+        {
+            label: 'Contacto',
+            imgPath: Josefina4,
+        },
+        {
+            label: 'Presentacion',
+            imgPath: Josefina5,
+        },
+    ];
+
     return (
         <section id='proyectos' className="flex flex-col items-center justify-center dark:bg-slate-800">
             <h1 className=' mt-20 text-center mb-10 text-3xl sm:text-4xl md:text-5xl  font-bold w-12/12 dark:text-slate-300 scroll-animation'>Nuestros<span className='text-emerald-400 ml-2 lg:ml-4'>Proyectos</span></h1>
@@ -67,6 +97,13 @@ export const Proyectos = () => {
                     title={"Cine-Hub"}
                     info={"Blog Web sobre Cine"}
                     modalImages={modalImagesCineHub}
+                    className=" scroll-animation"
+                />
+                <CardProyects
+                    src={Josefina5}
+                    title={"Luna Creciente"}
+                    info={"Pagina web para salon de spa"}
+                    modalImages={modalImagesJosefina}
                     className=" scroll-animation"
                 />
             </div>
